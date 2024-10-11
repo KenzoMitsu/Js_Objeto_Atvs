@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        const esfirra = {
+            local_venda: 'Zé Colméia',
+            sabor: 'carne',
+            preco: 3.00,
+            pedacos: 10,
+            categoria: 'salgado',
+            quantidade: 1,
+
+            comer() {
+                this.pedacos -= 1
+                console.log("Nhac! Mordida na esfirra. Agora restaram apenas mais " + this.pedacos + "mordidas")
+            },
+
+            comprarMaisUm() {
+                this.quantidade += 1
+                console.log("Você comprou mais uma esfirra! Agora você tem " + this.quantidade + " esfirras.")
+            },
+            
+            alterarSabor(novoSabor) {
+                this.sabor = novoSabor
+                console.log("O sabor da esfirra foi alterado para " + this.sabor)
+            }
+        }
+
+    </script>
+</body>
+</html>
